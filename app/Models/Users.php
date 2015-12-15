@@ -1,6 +1,6 @@
 <?php
 
-namespace Models;
+namespace App\Models;
 
 use Core\Db\ActiveRecord;
 use Core\Db\DBConnect;

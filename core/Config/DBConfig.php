@@ -13,6 +13,7 @@ class DBConfig
 	
 	public static function getDbConfig()
 	{
+		
 		return [
 					'dns'		=> self::DNS,
 					'dbDriver'	=> self::DB_DRIVER, 

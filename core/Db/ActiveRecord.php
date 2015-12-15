@@ -23,7 +23,7 @@ class ActiveRecord
 		$this->_conn = $db->getConnection();
 		$className = strtolower(get_class($this));
 		//echo $className;	
-		$temp_tbname = str_replace('models\\', '', $className);
+		$temp_tbname = str_replace('app\\models\\', '', $className);
 		$this->table = strtolower($temp_tbname);
 		$this->getColumnName();
 	}
@@ -64,8 +64,10 @@ class ActiveRecord
 		{
 			$key = str_replace(':', '', $param);
 			$stmt->bindParam($param, $this->properties[$key]);
+			echo $this->properties[$key];
 		}
-		$stmt->execute();
+		echo $this->table;
+		return $stmt->execute();
 		
 	}
 
