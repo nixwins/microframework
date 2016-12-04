@@ -4,7 +4,7 @@ namespace Core\Config;
 
 class DBConfig
 {
-	const DNS			= 'mysql';
+	const DNS		= 'mysql';
 	const DB_DRIVER 	= 'PDO';
 	const DB_HOST 		= 'localhost';
 	const DB_USER 		= 'root';
