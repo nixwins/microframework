@@ -8,7 +8,7 @@ class DBConfig
 	const DB_DRIVER 	= 'PDO';
 	const DB_HOST 		= 'localhost';
 	const DB_USER 		= 'root';
-	const DB_PASS		= 'birone89';
+	const DB_PASS		= '';
 	const DB_NAME		= 'ar_test';
 	
 	public static function getDbConfig()
